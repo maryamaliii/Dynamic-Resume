@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="resumeForm">
+    <fieldset>
+        <legend>username</legend>
+        <input type="text" id="username" placeholder="username" required><br><br>
+
+
+        <label for="Profession">Profession:</label>
+        <input type="text" id="Profession" placeholder="Profession" required><br><br>
+
+
+        <legend>Personal Information</legend><br>
+        <input type="file" id="photo" name="photo" required>
+
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+
+        <label for="cnic">CNIC Number:</label>
+        <input type="text" id="cnic" name="cnic" required>
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Education</legend>
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" required>
+
+        <label for="education">School:</label>
+        <input type="text" id="education" name="education" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Details:</label>
+        <textarea name="experience" id="experience" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Write your skills:</label>
+        <textarea name="skills" id="skills" required></textarea>
+    </fieldset>
+
+    <button type="submit">Create Resume</button>
+    </form>
+
+    <div id="resumePage" class="resume-page hidden">
+        <div id="resumeContent" class="resume-content">
+            <img id="resumePhoto"   class="resume-Photo"  src="" alt="photo">
+
+            <h1 id="resumeUsername"></h1>
+            <h2 id="resumeProfession"></h2>
+            <p id="resumeFullname"></p>
+            <p id="resumeEmail"></p>
+            <p id="resumePhone"></p>
+            <p id="resumeCNIC"></p>
+
+            <h2>Education</h2>
+            <p id="resumeDegree"></p>
+            <p id="resumeEducation"></p>
+
+            <h2>Experience</h2>
+            <p id="resumeExperiece"></p>
+
+            <h2>Skills</h2>
+            <p id="resumeSkills"></p>
+
+        </div>
+        <button id="editButton">Edit</button>
+        <button id="backButton" onclick="window.location.href='index.html'" >Back to form</button>
+        <button id="shareLinkButton">Share</button>
+        <button id="downloadpdf">Download</button>
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
